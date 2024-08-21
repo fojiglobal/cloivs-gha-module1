@@ -8,5 +8,5 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Get Context Data
-              run: echo "${{ toJSON(github) }}"
+              run: echo "${{ toJSON(github.event.issue.comments_url) }}"
     
