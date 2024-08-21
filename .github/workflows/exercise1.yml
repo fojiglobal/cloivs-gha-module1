@@ -35,7 +35,7 @@ jobs:
         run: |
           npm install
     #   - name: Get Context Data
-    #     run: echo "${{ toJSON(github) }}"
+    #     run: echo "${{ toJSON(github.event) }}"
 
   test:
     runs-on: ubuntu-latest
