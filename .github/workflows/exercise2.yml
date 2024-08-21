@@ -1,0 +1,12 @@
+name: Exercise2
+
+on:
+    issues:
+      types: [opened, edited]
+jobs:
+    DisplayIssues:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Get Context Data
+              run: echo "${{ toJSON(github) }}"
+    
